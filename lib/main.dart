@@ -26,10 +26,14 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(title: Text("Meu App")),
       body: Container(
           width: double.infinity,
+          height: double.infinity,
           color: Colors.red,
-          child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceAround, //DisplayFlex,
+          child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               crossAxisAlignment: CrossAxisAlignment.center,
+
+              //mainAxisAlignment: MainAxisAlignment.spaceAround, //DisplayFlex,
+              //crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
                 Text("Item 1"),
                 Text("Item 2"),
