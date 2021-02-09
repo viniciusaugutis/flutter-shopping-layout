@@ -28,9 +28,9 @@ class HomePage extends StatelessWidget {
           width: double.infinity,
           height: double.infinity,
           color: Colors.red,
-          child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              crossAxisAlignment: CrossAxisAlignment.center,
+          child: ListView(scrollDirection: Axis.horizontal,
+              /*mainAxisAlignment: MainAxisAlignment.spaceAround,
+              crossAxisAlignment: CrossAxisAlignment.center,*/
 
               //mainAxisAlignment: MainAxisAlignment.spaceAround, //DisplayFlex,
               //crossAxisAlignment: CrossAxisAlignment.center,
