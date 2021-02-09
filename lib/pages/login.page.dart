@@ -6,7 +6,7 @@ class LoginPage extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         body: Container(
-          color: Colors.cyan,
+          color: Colors.white,
           padding: EdgeInsets.only(
             top: 80,
             left: 20,
@@ -97,22 +97,32 @@ class LoginPage extends StatelessWidget {
                         height: 10,
                       ),
                       Container(
-                          decoration: BoxDecoration(
-                              color: Colors.blue,
-                              borderRadius: BorderRadius.all(
-                                Radius.circular(5),
-                              )),
-                          child: FlatButton(
-                            child: Text("Sign in",
-                                style: TextStyle(
-                                  color: Colors.white,
-                                )),
-                            onPressed: () {},
-                          ))
+                        decoration: BoxDecoration(
+                            color: Colors.blue,
+                            borderRadius: BorderRadius.all(
+                              Radius.circular(5),
+                            )),
+                        child: FlatButton(
+                          child: Text(
+                            "Sign in",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                          onPressed: () {},
+                        ),
+                      )
                     ],
                   ),
                 ),
               ),
+              Container(
+                  padding: EdgeInsets.only(top: 15, bottom: 15),
+                  child: Text("- OR - ",
+                      style: TextStyle(
+                        fontSize: 14,
+                        fontWeight: FontWeight.w300,
+                      )))
             ],
           ),
         ),
