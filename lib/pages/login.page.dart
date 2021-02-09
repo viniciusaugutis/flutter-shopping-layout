@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shoppinglayout/pages/signup.page.dart';
 
 class LoginPage extends StatelessWidget {
   @override
@@ -50,7 +51,14 @@ class LoginPage extends StatelessWidget {
                             ]),
                             FlatButton(
                               child: Text("Sign up"),
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => SignUpPage(),
+                                  ),
+                                );
+                              },
                             )
                           ],
                         ),
