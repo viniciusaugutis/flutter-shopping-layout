@@ -92,7 +92,23 @@ class LoginPage extends StatelessWidget {
                           child: Text("Forgot your password?"),
                           onPressed: () {},
                         ),
-                      )
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Container(
+                          decoration: BoxDecoration(
+                              color: Colors.blue,
+                              borderRadius: BorderRadius.all(
+                                Radius.circular(5),
+                              )),
+                          child: FlatButton(
+                            child: Text("Sign in",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                )),
+                            onPressed: () {},
+                          ))
                     ],
                   ),
                 ),
