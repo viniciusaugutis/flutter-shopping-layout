@@ -117,12 +117,78 @@ class LoginPage extends StatelessWidget {
                 ),
               ),
               Container(
-                  padding: EdgeInsets.only(top: 15, bottom: 15),
-                  child: Text("- OR - ",
-                      style: TextStyle(
-                        fontSize: 14,
-                        fontWeight: FontWeight.w300,
-                      )))
+                padding: EdgeInsets.only(top: 15, bottom: 15),
+                child: Text(
+                  "- OR - ",
+                  style: TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w300,
+                  ),
+                ),
+              ),
+              Container(
+                width: double.infinity,
+                height: 60,
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    width: 2.0,
+                    color: Theme.of(context).accentColor,
+                  ),
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(5),
+                  ),
+                ),
+                child: FlatButton(
+                  child: Row(
+                    children: <Widget>[
+                      Container(
+                        height: 24,
+                        width: 100,
+                        child: Image.asset(
+                          "assets/facebook.png",
+                          width: 24,
+                          fit: BoxFit.fitHeight,
+                        ),
+                      ),
+                      Text("Sign in with facebook")
+                    ],
+                  ),
+                  onPressed: () {},
+                ),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Container(
+                width: double.infinity,
+                height: 60,
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    width: 2.0,
+                    color: Theme.of(context).accentColor,
+                  ),
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(5),
+                  ),
+                ),
+                child: FlatButton(
+                  child: Row(
+                    children: <Widget>[
+                      Container(
+                        height: 24,
+                        width: 100,
+                        child: Image.asset(
+                          "assets/google.png",
+                          width: 24,
+                          fit: BoxFit.fitHeight,
+                        ),
+                      ),
+                      Text("Sign in with google")
+                    ],
+                  ),
+                  onPressed: () {},
+                ),
+              )
             ],
           ),
         ),
